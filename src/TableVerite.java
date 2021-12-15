@@ -46,41 +46,7 @@ public class TableVerite {
        return  completion(decomposition(x),n);
     }
 
-    public static void main(String[] args){
-            //Question 1 test for decomposition
 
-            TableVerite tableVerite=new TableVerite();
-            ArrayList<Boolean> result= tableVerite.decomposition(38);
-            System.out.println("result for quesion 1.2");
-            for(Boolean b1:result){
-                System.out.println(b1);
-            }
-
-            ArrayList<Boolean>  result2=  tableVerite.completion(result,4);
-            ArrayList<Boolean>  result3=tableVerite.completion(result,8);
-            System.out.println("result for exemple1 of quesion 1.3");
-            for(Boolean b1:result2){
-                System.out.println(b1);
-            }
-            System.out.println("result for exemple2 of quesion 1.3");
-            for(Boolean b1:result3){
-                System.out.println(b1);
-            }
-
-            System.out.println("result for exemple1 of quesion 1.4");
-            ArrayList<Boolean>  result4=tableVerite.table(38,4);
-            for(Boolean b1:result4){
-                System.out.println(b1);
-            }
-            System.out.println("result for exemple2 of quesion 1.4");
-            ArrayList<Boolean>  result5=tableVerite.table(38,8);
-            for(Boolean b1:result5){
-                System.out.println(b1);
-            }
-
-            
-
-    }
 
 
 }
